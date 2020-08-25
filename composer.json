@@ -6,12 +6,16 @@
             "email": "molych69@gmail.com"
         }
     ],
+    "description": "hexlet brain-game",
+    "license": "MIT",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-ever"
       ],
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/Game.php"
         ]
     },
     "scripts": {
