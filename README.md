@@ -11,3 +11,6 @@ brain-ever <br>
 brain-calc <br>
 <a href="https://asciinema.org/a/lLCPwFeH5AlfPe633CLA3hVXU"><img src="https://asciinema.org/a/lLCPwFeH5AlfPe633CLA3hVXU.png" width="320"/></a>
 <a href="https://asciinema.org/a/H1ORNd129L9Uxr9fflpz8f2w2"><img src="https://asciinema.org/a/H1ORNd129L9Uxr9fflpz8f2w2.png" width="320"/></a>
+<br>
+brain-gcd
+<a href="https://asciinema.org/a/HOBG6aW3bUkNQEJU6QCziLLzC"><img src="https://asciinema.org/a/HOBG6aW3bUkNQEJU6QCziLLzC.png" width="320"/></a>
