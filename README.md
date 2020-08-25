@@ -8,3 +8,5 @@ Status of last Deployment:<br>
 brain-ever <br>
 <a href="https://asciinema.org/a/zFP1CW1Ks9pULBNgpTAl9lJn7"><img src="https://asciinema.org/a/zFP1CW1Ks9pULBNgpTAl9lJn7.png" width="320"/></a>
 <a href="https://asciinema.org/a/pYVUqMjfzxLbOwFd8edb9LNCM"><img src="https://asciinema.org/a/pYVUqMjfzxLbOwFd8edb9LNCM.png" width="320"/></a><br>
+brain-calc <br>
+<a href="https://asciinema.org/a/lLCPwFeH5AlfPe633CLA3hVXU"><img src="https://asciinema.org/a/lLCPwFeH5AlfPe633CLA3hVXU.png" width="320"/></a>
