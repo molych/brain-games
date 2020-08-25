@@ -10,12 +10,16 @@
     "license": "MIT",
     "bin": [
         "bin/brain-games",
-        "bin/brain-ever"
+        "bin/brain-ever",
+        "bin/brain-calc",
+        "bin/brain-gsd"
       ],
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/Game.php"
+            "src/GameBrain.php",
+            "src/GameCalc.php",
+            "src/GameGsd.php"
         ]
     },
     "scripts": {

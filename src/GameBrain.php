@@ -1,11 +1,11 @@
 <?php
 
-namespace Brain\Ever\Game;
+namespace Brain\Ever\GameBrain;
 
 use function cli\line;
 use function cli\prompt;
 
-function game()
+function gameBrainEver()
 {
 
     line("Welcome to Brain Games!
