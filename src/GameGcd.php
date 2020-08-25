@@ -1,11 +1,11 @@
 <?php
 
-namespace Brain\gsd\GameGsd;
+namespace Brain\Gcd\GameGcd;
 
 use function cli\line;
 use function cli\prompt;
 
-function gamegsd()
+function gameGcd()
 {
 
     line("Welcome to Brain Games!
@@ -27,13 +27,13 @@ function gamegsd()
         $correctAnswer = null;
      
 
-        while ($randomNubmer1 != $randomNubmer2 ){
-            if ($randomNubmer1>$randomNubmer2) {
-            $randomNubmer1 -= $randomNubmer2;
+        while ($randomNubmer1 != $randomNubmer2) {
+            if ($randomNubmer1 > $randomNubmer2) {
+                $randomNubmer1 -= $randomNubmer2;
             } else {
-            $randomNubmer2 -= $randomNubmer1;
+                $randomNubmer2 -= $randomNubmer1;
             }
-            $correctAnswer = $randomNubmer1; 
+            $correctAnswer = $randomNubmer1;
         }
 
 
@@ -51,5 +51,4 @@ function gamegsd()
     }
 
     return  line("Congratulations, $name");
-
 }

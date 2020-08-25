@@ -28,15 +28,15 @@ function gameCalc()
             case "+":
                 $operation = '+';
                 $correctAnswer = $randomNubmer1 + $randomNubmer2;
-            break;
+                break;
             case "-":
                 $operation = "-";
                 $correctAnswer = $randomNubmer1 - $randomNubmer2;
-            break;
+                break;
             case "*":
                 $operation = "*";
                 $correctAnswer = $randomNubmer1 * $randomNubmer2;
-            break;
+                break;
             default:
                 break;
         }
