@@ -16,12 +16,12 @@ function startGame()
     $strGames = implode(' ', $arrGames);
     line("Welcome to Brain Games!");
     line($strGames);
-    $nameGame = prompt("Check game");
+    $nameGame = prompt("select game");
 
     $quantityQuestion = 3;
 
     if (!in_array($nameGame, $arrGames)) {
-        return line('Sorry this game is ...');
+        return line('Sorry this game is missing');
     }
 
     switch ($nameGame) {
