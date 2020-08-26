@@ -27,20 +27,18 @@ function startGame()
     switch ($nameGame) {
         case 'brain-ever':
             gameBrainEver($quantityQuestion);
-        break;
+            break;
         case 'brain-calc':
             gameCalc($quantityQuestion);
-        break;
+            break;
         case 'brain-gcd':
             gameGcd($quantityQuestion);
-        break;
+            break;
         case 'brain-prime':
             gamePrime();
-        break;
+            break;
         case 'brain-progression':
             gameProgression($quantityQuestion);
-        break;
-
+            break;
     }
-  
 }
