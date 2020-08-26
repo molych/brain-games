@@ -9,7 +9,7 @@ function gamePrime($quantityQuestion = 3)
 {
 
     line("Welcome to Brain Games!
-    Find the greatest common divisor of given numbers.\n");
+    Answer 'yes' if given number is prime. Otherwise answer 'no'.\n");
     $name = prompt("May I have your name?");
     line("Hello, %s!\n", $name);
 
