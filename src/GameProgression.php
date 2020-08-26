@@ -13,37 +13,39 @@ function gameProgression()
     $name = prompt("May I have your name?");
     line("Hello, %s!\n", $name);
 
-    $min = 0;
-    $max = 9;
-    $length = $max;
-    $secretNubmer = rand($min, $max);
-    $startNumber = rand(1, 100);
-    $stepNunber = rand(1, 10);
-    $arrNumbers = [];
+    $quantityQuestion = 3;
+    for ($i = 0; $i < $quantityQuestion; $i++) {
+        $min = 0;
+        $max = 9;
+        $length = $max;
+        $secretNubmer = rand($min, $max);
+        $startNumber = rand(1, 100);
+        $stepNunber = rand(1, 10);
+        $arrNumbers = [];
 
-    $ownAnswer = null;
-    $correctAnswer = null;
+        $ownAnswer = null;
+        $correctAnswer = null;
 
-    for ($i = 0; $i <= $length; $i++) {
-        $startNumber += $stepNunber;
-        $arrNumbers[] = $startNumber;
-    }
+        for ($j = 0; $j <= $length; $j++) {
+            $startNumber += $stepNunber;
+            $arrNumbers[] = $startNumber;
+        }
     
-    $correctAnswer = $arrNumbers[$secretNubmer];
-    $arrNumbers[$secretNubmer] = "..";
-    $strNumbers = implode(' ', $arrNumbers);
+        $correctAnswer = $arrNumbers[$secretNubmer];
+        $arrNumbers[$secretNubmer] = "..";
+        $strNumbers = implode(' ', $arrNumbers);
 
-    line("Question: $ $strNumbers");
-    $ownAnswer = prompt("Your answer");
+        line("Question: $ $strNumbers");
+        $ownAnswer = prompt("Your answer");
 
-    $incorrectLineAnswer = "$ownAnswer is wrong answer ;(. Correct answer was $correctAnswer.
-    Let's try again, $name!";
+        $incorrectLineAnswer = "$ownAnswer is wrong answer ;(. Correct answer was $correctAnswer.
+        Let's try again, $name!";
         
-    if ($ownAnswer == $correctAnswer) {
-        line("Correct\n");
-    } else {
-        return line($incorrectLineAnswer);
+        if ($ownAnswer == $correctAnswer) {
+            line("Correct\n");
+        } else {
+            return line($incorrectLineAnswer);
+        }
     }
-    
     return  line("Congratulations, $name");
 }
