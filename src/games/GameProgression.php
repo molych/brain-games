@@ -9,7 +9,7 @@ function gameProgression($quantityQuestion = 3)
 {
 
     line("Welcome to Brain Games!
-    What number is missing in the progression?.\n");
+    What number is missing in the progression?\n");
     $name = prompt("May I have your name?");
     line("Hello, %s!\n", $name);
 
