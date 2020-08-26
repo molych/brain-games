@@ -5,7 +5,7 @@ namespace Brain\Calc\GameCalc;
 use function cli\line;
 use function cli\prompt;
 
-function gameCalc()
+function gameCalc($quantityQuestion = 3)
 {
 
     line("Welcome to Brain Games!
@@ -13,7 +13,7 @@ function gameCalc()
     $name = prompt("May I have your name?");
     line("Hello, %s!\n", $name);
 
-    $quantityQuestion = 3;
+    
     for ($i = 0; $i < $quantityQuestion; $i++) {
         $min = 1;
         $max = 10;

@@ -14,16 +14,18 @@
         "bin/brain-calc",
         "bin/brain-gcd",
         "bin/brain-progression",
-        "bin/brain-prime"
+        "bin/brain-prime",
+        "bin/brain-game"
       ],
     "autoload": {
         "files": [
-            "src/Cli.php",
-            "src/GameBrain.php",
-            "src/GameCalc.php",
-            "src/GameGcd.php",
-            "src/GameProgression.php",
-            "src/GamePrime.php"
+            "src/games/Cli.php",
+            "src/games/GameBrain.php",
+            "src/games/GameCalc.php",
+            "src/games/GameGcd.php",
+            "src/games/GameProgression.php",
+            "src/games/GamePrime.php",
+            "src/flow.php"
         ]
     },
     "scripts": {
