@@ -9,7 +9,7 @@ function gameProgression($quantityQuestion = 3)
 {
 
     line("Welcome to Brain Games!
-    Find the greatest common divisor of given numbers.\n");
+    What number is missing in the progression?.\n");
     $name = prompt("May I have your name?");
     line("Hello, %s!\n", $name);
 
