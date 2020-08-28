@@ -5,14 +5,14 @@ namespace Brain\Games\GameFlow;
 use function cli\line;
 use function cli\prompt;
 use function Brain\Games\GameCalc\run as gameCalc;
-use function Brain\Games\GameEven\run as gameBrainEver;
+use function Brain\Games\GameEven\run as gameBrainEven;
 use function Brain\Games\GameGcd\run as gameGcd;
 use function Brain\Games\GamePrime\run as gamePrime;
 use function Brain\Games\GameProgression\run as gameProgression;
 
 function startGame()
 {
-    $arrGames = ['brain-ever', 'brain-calc', 'brain-gcd', 'brain-prime', 'brain-progression'];
+    $arrGames = ['brain-even', 'brain-calc', 'brain-gcd', 'brain-prime', 'brain-progression'];
     $strGames = implode(' ', $arrGames);
     line("Welcome to Brain Games!");
     line($strGames);
@@ -23,8 +23,8 @@ function startGame()
     }
 
     switch ($nameGame) {
-        case 'brain-ever':
-            gameBrainEver();
+        case 'brain-even':
+            gameBrainEven();
             break;
         case 'brain-calc':
             gameCalc();
