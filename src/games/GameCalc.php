@@ -15,9 +15,10 @@ function run()
         $randomNubmer2 = rand($min, $max);
 
         $operationArr = ["+","-","*"];
-        $operation = array_rand($operationArr, 1);
+        $index = array_rand($operationArr, 1);
+        $operation =  $operationArr[$index];
         $question = "$randomNubmer1 $operation $randomNubmer2";
-
+        
         switch ($operation) {
             case "+":
                 $correctAnswer = $randomNubmer1 + $randomNubmer2;

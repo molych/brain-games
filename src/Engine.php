@@ -22,7 +22,7 @@ function startGame($description, $getData)
         $incorrectLineAnswer = "$ownAnswer is wrong answer ;(. Correct answer was $correctAnswer.
         Let's try again, $name!";
         
-        if ($ownAnswer === $correctAnswer) {
+        if ($ownAnswer == $correctAnswer) {
             line("Correct\n");
         } else {
             return line($incorrectLineAnswer);
