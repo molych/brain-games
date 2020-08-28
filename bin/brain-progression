@@ -10,7 +10,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Brain\Progression\GameProgression\gameProgression;
+use function Brain\Games\GameProgression\run;
 
-print_r(gameProgression());
+print_r(run());
 ?>

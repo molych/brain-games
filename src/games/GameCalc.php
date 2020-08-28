@@ -1,59 +1,38 @@
 <?php
 
-namespace Brain\Calc\GameCalc;
+namespace Brain\Games\GameCalc;
 
-use function cli\line;
-use function cli\prompt;
+use function Brain\Games\Engine\startGame;
 
-function gameCalc($quantityQuestion = 3)
+const DESCRIPTION = "What is the result of the expression?\n";
+
+function run()
 {
-
-    line("Welcome to Brain Games!
-    What is the result of the expression?\n");
-    $name = prompt("May I have your name?");
-    line("Hello, %s!\n", $name);
-
-    
-    for ($i = 0; $i < $quantityQuestion; $i++) {
+    $getData = function () {
         $min = 1;
         $max = 10;
         $randomNubmer1 = rand($min, $max);
         $randomNubmer2 = rand($min, $max);
 
-        $correctAnswer = null;
-        $ownAnswer = null;
-        $operation = ["+","-","*"];
+        $operationArr = ["+","-","*"];
+        $operation = array_rand($operationArr, 1);
+        $question = "$randomNubmer1 $operation $randomNubmer2";
 
-        switch ($operation[$i]) {
+        switch ($operation) {
             case "+":
-                $operation = '+';
                 $correctAnswer = $randomNubmer1 + $randomNubmer2;
                 break;
             case "-":
-                $operation = "-";
                 $correctAnswer = $randomNubmer1 - $randomNubmer2;
                 break;
             case "*":
-                $operation = "*";
                 $correctAnswer = $randomNubmer1 * $randomNubmer2;
                 break;
             default:
                 break;
         }
-      
-        line("Question: $randomNubmer1 $operation $randomNubmer2");
-        $ownAnswer = prompt("Your answer");
+        return [$question, $correctAnswer];
+    };
 
-
-        $incorrectLineAnswer = "$ownAnswer is wrong answer ;(. Correct answer was $correctAnswer.
-        Let's try again, $name!";
-        
-        if ($ownAnswer == $correctAnswer) {
-            line("Correct\n");
-        } else {
-            return line($incorrectLineAnswer);
-        }
-    }
-
-    return  line("Congratulations, $name");
+    startGame(DESCRIPTION, $getData);
 }

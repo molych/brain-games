@@ -1,14 +1,14 @@
 <?php
 
-namespace Brain\Game\Flow;
+namespace Brain\Games\GameFlow;
 
 use function cli\line;
 use function cli\prompt;
-use function Brain\Calc\GameCalc\gameCalc;
-use function Brain\Ever\GameBrain\gameBrainEver;
-use function Brain\Gcd\GameGcd\gameGcd;
-use function Brain\Prime\GamePrime\gamePrime;
-use function Brain\Progression\GameProgression\gameProgression;
+use function Brain\Games\GameCalc\run as gameCalc;
+use function Brain\Games\GameEven\run as gameBrainEver;
+use function Brain\Games\GameGcd\run as gameGcd;
+use function Brain\Games\GamePrime\run as gamePrime;
+use function Brain\Games\GameProgression\run as gameProgression;
 
 function startGame()
 {
@@ -18,27 +18,25 @@ function startGame()
     line($strGames);
     $nameGame = prompt("select game");
 
-    $quantityQuestion = 3;
-
     if (!in_array($nameGame, $arrGames)) {
         return line('Sorry this game is missing');
     }
 
     switch ($nameGame) {
         case 'brain-ever':
-            gameBrainEver($quantityQuestion);
+            gameBrainEver();
             break;
         case 'brain-calc':
-            gameCalc($quantityQuestion);
+            gameCalc();
             break;
         case 'brain-gcd':
-            gameGcd($quantityQuestion);
+            gameGcd();
             break;
         case 'brain-prime':
             gamePrime();
             break;
         case 'brain-progression':
-            gameProgression($quantityQuestion);
+            gameProgression();
             break;
     }
 }

@@ -9,23 +9,21 @@
     "description": "hexlet brain-game",
     "license": "MIT",
     "bin": [
-        "bin/brain-games",
-        "bin/brain-ever",
+        "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
         "bin/brain-progression",
         "bin/brain-prime",
-        "bin/brain-game"
+        "bin/brain-games"
       ],
     "autoload": {
         "files": [
-            "src/games/Cli.php",
-            "src/games/GameBrain.php",
+            "src/games/GameEven.php",
             "src/games/GameCalc.php",
             "src/games/GameGcd.php",
             "src/games/GameProgression.php",
             "src/games/GamePrime.php",
-            "src/flow.php"
+            "src/games/GameFlow.php"
         ]
     },
     "scripts": {

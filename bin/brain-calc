@@ -10,7 +10,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Brain\Calc\GameCalc\gameCalc;
+use function Brain\Games\GameCalc\run;
 
-print_r(gameCalc());
+print_r(run());
 ?>

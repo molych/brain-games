@@ -10,7 +10,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Brain\Game\Flow\startGame;
+use function Brain\Games\GameEven\run;
 
-print_r(startGame());
+print_r(run());
 ?>

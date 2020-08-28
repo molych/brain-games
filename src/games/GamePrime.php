@@ -1,24 +1,18 @@
 <?php
 
-namespace Brain\Prime\GamePrime;
+namespace Brain\Games\GamePrime;
 
-use function cli\line;
-use function cli\prompt;
+use function Brain\Games\Engine\startGame;
 
-function gamePrime($quantityQuestion = 3)
+const DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.\n";
+
+function run()
 {
-
-    line("Welcome to Brain Games!
-    Answer 'yes' if given number is prime. Otherwise answer 'no'.\n");
-    $name = prompt("May I have your name?");
-    line("Hello, %s!\n", $name);
-
-    for ($i = 0; $i < $quantityQuestion; $i++) {
+    $getData = function () {
         $min = 1;
         $max = 100;
         $randomNumber = rand($min, $max);
 
-        $ownAnswer = null;
         $correctAnswer = 'yes';
    
         if ($randomNumber == 1) {
@@ -31,17 +25,7 @@ function gamePrime($quantityQuestion = 3)
             }
         }
     
-        line("Question: $ $randomNumber");
-        $ownAnswer = prompt("Your answer");
-
-        $incorrectLineAnswer = "$ownAnswer is wrong answer ;(. Correct answer was $correctAnswer.
-        Let's try again, $name!";
-        
-        if ($ownAnswer == $correctAnswer) {
-            line("Correct\n");
-        } else {
-            return line($incorrectLineAnswer);
-        }
-    }
-    return  line("Congratulations, $name");
+        return [$randomNumber, $correctAnswer];
+    };
+    startGame(DESCRIPTION, $getData);
 }

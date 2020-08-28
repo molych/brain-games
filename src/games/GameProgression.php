@@ -1,20 +1,15 @@
 <?php
 
-namespace Brain\Progression\GameProgression;
+namespace Brain\Games\GameProgression;
 
-use function cli\line;
-use function cli\prompt;
+use function Brain\Games\Engine\startGame;
 
-function gameProgression($quantityQuestion = 3)
+const DESCRIPTION = "What number is missing in the progression?\n";
+
+function run()
 {
 
-    line("Welcome to Brain Games!
-    What number is missing in the progression?\n");
-    $name = prompt("May I have your name?");
-    line("Hello, %s!\n", $name);
-
-    
-    for ($i = 0; $i < $quantityQuestion; $i++) {
+    $getData = function () {
         $min = 0;
         $max = 9;
         $length = $max;
@@ -23,9 +18,6 @@ function gameProgression($quantityQuestion = 3)
         $stepNunber = rand(1, 10);
         $arrNumbers = [];
 
-        $ownAnswer = null;
-        $correctAnswer = null;
-
         for ($j = 0; $j <= $length; $j++) {
             $startNumber += $stepNunber;
             $arrNumbers[] = $startNumber;
@@ -33,19 +25,9 @@ function gameProgression($quantityQuestion = 3)
     
         $correctAnswer = $arrNumbers[$secretNubmer];
         $arrNumbers[$secretNubmer] = "..";
-        $strNumbers = implode(' ', $arrNumbers);
+        $question = implode(' ', $arrNumbers);
 
-        line("Question: $ $strNumbers");
-        $ownAnswer = prompt("Your answer");
-
-        $incorrectLineAnswer = "$ownAnswer is wrong answer ;(. Correct answer was $correctAnswer.
-        Let's try again, $name!";
-        
-        if ($ownAnswer == $correctAnswer) {
-            line("Correct\n");
-        } else {
-            return line($incorrectLineAnswer);
-        }
-    }
-    return  line("Congratulations, $name");
+        return [$question, $correctAnswer];
+    };
+    startGame(DESCRIPTION, $getData);
 }
