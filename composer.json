@@ -23,7 +23,8 @@
             "src/games/GameGcd.php",
             "src/games/GameProgression.php",
             "src/games/GamePrime.php",
-            "src/games/GameFlow.php"
+            "src/games/GameFlow.php",
+            "src/Engine.php"
         ]
     },
     "scripts": {
