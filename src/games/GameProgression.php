@@ -4,7 +4,7 @@ namespace Brain\Games\GameProgression;
 
 use function Brain\Games\Engine\startGame;
 
-const DESCRIPTION = "What number is missing in the progression?\n";
+const DESCRIPTION = "What number is missing in the progression?";
 
 function run()
 {

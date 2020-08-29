@@ -4,7 +4,7 @@ namespace Brain\Games\GameEven;
 
 use function Brain\Games\Engine\startGame;
 
-const DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'.\n";
+const DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
 function run()
 {

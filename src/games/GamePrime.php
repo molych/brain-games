@@ -4,7 +4,7 @@ namespace Brain\Games\GamePrime;
 
 use function Brain\Games\Engine\startGame;
 
-const DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.\n";
+const DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
 function run()
 {

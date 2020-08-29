@@ -2,6 +2,8 @@
 
 namespace Brain\Games\GameFlow;
 
+use Exception;
+
 use function cli\line;
 use function cli\prompt;
 use function Brain\Games\GameCalc\run as gameCalc;
@@ -14,7 +16,6 @@ function startGame()
 {
     $arrGames = ['brain-even', 'brain-calc', 'brain-gcd', 'brain-prime', 'brain-progression'];
     $strGames = implode(' ', $arrGames);
-    line("Welcome to Brain Games!");
     line($strGames);
     $nameGame = prompt("select game");
 
@@ -38,5 +39,7 @@ function startGame()
         case 'brain-progression':
             gameProgression();
             break;
+        default:
+            throw new Exception("Unknown name game: $nameGame");
     }
 }

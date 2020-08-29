@@ -12,5 +12,5 @@ if (file_exists($autoloadPath1)) {
 
 use function Brain\Games\GamePrime\run;
 
-print_r(run());
+run();
 ?>

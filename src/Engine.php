@@ -13,7 +13,7 @@ function startGame($description, $getData)
     line("Welcome to Brain Games!");
     line($description);
     $name = prompt("May I have your name?");
-    line("Hello, %s!\n", $name);
+    line("Hello, %s!", $name);
 
     for ($i = 0; $i < QUANTITY_ROUNDS; $i++) {
         [$question, $correctAnswer] = $getData();

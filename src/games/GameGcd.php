@@ -4,7 +4,7 @@ namespace Brain\Games\GameGcd;
 
 use function Brain\Games\Engine\startGame;
 
-const DESCRIPTION = "Find the greatest common divisor of given numbers.\n";
+const DESCRIPTION = "Find the greatest common divisor of given numbers.";
 
 function run()
 {
