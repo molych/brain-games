@@ -1,16 +1,16 @@
 <?php
 
-namespace Brain\Games\GameFlow;
+namespace Brain\Games\Games\GameFlow;
 
 use Exception;
 
 use function cli\line;
 use function cli\prompt;
-use function Brain\Games\GameCalc\run as gameCalc;
-use function Brain\Games\GameEven\run as gameBrainEven;
-use function Brain\Games\GameGcd\run as gameGcd;
-use function Brain\Games\GamePrime\run as gamePrime;
-use function Brain\Games\GameProgression\run as gameProgression;
+use function Brain\Games\Games\GameCalc\run as gameCalc;
+use function Brain\Games\Games\GameEven\run as gameBrainEven;
+use function Brain\Games\Games\GameGcd\run as gameGcd;
+use function Brain\Games\Games\GamePrime\run as gamePrime;
+use function Brain\Games\Games\GameProgression\run as gameProgression;
 
 function startGame()
 {
