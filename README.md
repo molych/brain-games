@@ -6,10 +6,10 @@ Status of last Deployment:<br>
 <img src="https://github.com/molych/php-project-lvl1/workflows/PHP-CI/badge.svg"><br>
 
 brain-even <br>
-<a href="https://asciinema.org/a/rnuQyJcBgVhpZJdZTFi4AkNUK"><img src="https://asciinema.org/a/rnuQyJcBgVhpZJdZTFi4AkNUK.png" width="320"/></a>
-<a href="https://asciinema.org/a/rINGy7EBy43bZNbeJIUAt5ITo"><img src="https://asciinema.org/a/rINGy7EBy43bZNbeJIUAt5ITo.png" width="320"/></a><br>
+<a href="https://asciinema.org/a/357656"><img src="https://asciinema.org/a/357656.png" width="320"/></a>
+<a href="https://asciinema.org/a/357657"><img src="https://asciinema.org/a/357657.png" width="320"/></a><br>
 brain-calc <br>
-<a href="https://asciinema.org/a/lLCPwFeH5AlfPe633CLA3hVXU"><img src="https://asciinema.org/a/lLCPwFeH5AlfPe633CLA3hVXU.png" width="320"/></a>
+<a href="https://asciinema.org/a/357659"><img src="https://asciinema.org/a/357659.png" width="320"/></a>
 <a href="https://asciinema.org/a/H1ORNd129L9Uxr9fflpz8f2w2"><img src="https://asciinema.org/a/H1ORNd129L9Uxr9fflpz8f2w2.png" width="320"/></a>
 <br>
 brain-gcd <br>
