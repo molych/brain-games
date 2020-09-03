@@ -2,12 +2,27 @@
 
 namespace Brain\Games\Games\GameCalc;
 
-use Error;
-use Exception;
-
 use function Brain\Games\Engine\startGame;
 
 const DESCRIPTION = "What is the result of the expression?";
+
+function calculate($operation, $num1, $num2)
+{
+    switch ($operation) {
+        case "+":
+            $result = $num1 + $num2;
+            break;
+        case "-":
+            $result = $num1 - $num2;
+            break;
+        case "*":
+            $result = $num1 * $num2;
+            break;
+        default:
+            throw new \Exception("Unknown operation: $operation");
+    }
+    return $result;
+}
 
 function run()
 {
@@ -21,20 +36,8 @@ function run()
         $index = array_rand($mathematicalSigns, 1);
         $operation =  $mathematicalSigns[$index];
         $question = "$randomNubmer1 $operation $randomNubmer2";
+        $correctAnswer = calculate($operation, $randomNubmer1, $randomNubmer2);
         
-        switch ($operation) {
-            case "+":
-                $correctAnswer = $randomNubmer1 + $randomNubmer2;
-                break;
-            case "-":
-                $correctAnswer = $randomNubmer1 - $randomNubmer2;
-                break;
-            case "*":
-                $correctAnswer = $randomNubmer1 * $randomNubmer2;
-                break;
-            default:
-                throw new Exception("Unknown operation: $operation");
-        }
         return [$question, $correctAnswer];
     };
 
