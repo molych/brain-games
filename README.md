@@ -3,7 +3,7 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a><br>
 
 Status of last Deployment:<br>
-<img src="https://github.com/molych/php-project-lvl1/workflows/PHP-CI/badge.svg"><br>
+<a href="https://github.com/molych/php-project-lvl1/actions"><img src="https://github.com/molych/php-project-lvl1/workflows/PHP-CI/badge.svg"></a><br>
 
 brain-even <br>
 <a href="https://asciinema.org/a/357656"><img src="https://asciinema.org/a/357656.png" width="320"/></a>
