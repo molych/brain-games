@@ -29,14 +29,14 @@ function run()
     $getData = function () {
         $min = 1;
         $max = 10;
-        $randomNubmer1 = rand($min, $max);
-        $randomNubmer2 = rand($min, $max);
+        $firstOperand = rand($min, $max);
+        $seconOperand = rand($min, $max);
 
         $mathematicalSigns = ["+","-","*"];
         $index = array_rand($mathematicalSigns, 1);
         $operation =  $mathematicalSigns[$index];
-        $question = "$randomNubmer1 $operation $randomNubmer2";
-        $correctAnswer = calculate($operation, $randomNubmer1, $randomNubmer2);
+        $question = "$firstOperand $operation $seconOperand";
+        $correctAnswer = calculate($operation, $firstOperand, $seconOperand);
         
         return [$question, $correctAnswer];
     };

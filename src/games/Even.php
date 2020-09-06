@@ -8,11 +8,7 @@ const DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'."
 
 function isEven($num)
 {
-    if ($num & 1) {
-        return false;
-    } else {
-        return true;
-    }
+    return ($num & 1) ? false : true;
 }
 
 function run()
@@ -20,12 +16,9 @@ function run()
     $getData = function () {
         $min = 1;
         $max = 99;
-        $randomNumber = rand($min, $max);
+        $question = rand($min, $max);
         
-        $result = isEven($randomNumber);
-
-        $question = $randomNumber;
-        $correctAnswer = $result ? 'yes' : 'no';
+        $correctAnswer = isEven($question) ? 'yes' : 'no';
 
         return  [$question, $correctAnswer];
     };

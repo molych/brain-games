@@ -12,12 +12,12 @@ use function Brain\Games\Games\Progression\run as Progression;
 
 function startGame()
 {
-    $Games = ['brain-even', 'brain-calc', 'brain-gcd', 'brain-prime', 'brain-progression'];
-    $listGames = implode(' ', $Games);
-    line($listGames);
-    $nameGame = prompt("select game");
+    $collectionGames = ['brain-even', 'brain-calc', 'brain-gcd', 'brain-prime', 'brain-progression'];
+    $nameGames = implode(' ', $collectionGames);
+    line($nameGames);
+    $game = prompt("select game");
 
-    switch ($nameGame) {
+    switch ($game) {
         case 'brain-even':
             Even();
             break;
@@ -34,6 +34,6 @@ function startGame()
             Progression();
             break;
         default:
-            throw new \Exception("Unknown name game: $nameGame");
+            throw new \Exception("Unknown name game: $game");
     }
 }

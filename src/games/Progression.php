@@ -6,7 +6,7 @@ use function Brain\Games\Engine\startGame;
 
 const DESCRIPTION = "What number is missing in the progression?";
 
-function createNumbers($length, $startNumber, $stepNumber)
+function makeProgression($length, $startNumber, $stepNumber)
 {
     $numbers = [];
     for ($j = 0; $j <= $length; $j++) {
@@ -28,7 +28,7 @@ function run()
         $startNumber = rand(1, 100);
         $stepNumber = rand(1, 10);
  
-        $numbers = createNumbers($length, $startNumber, $stepNumber);
+        $numbers = makeProgression($length, $startNumber, $stepNumber);
         $correctAnswer = $numbers[$secretNumber];
         $numbers[$secretNumber] = "..";
         $question = implode(' ', $numbers);

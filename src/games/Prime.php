@@ -25,12 +25,9 @@ function run()
     $getData = function () {
         $min = 1;
         $max = 100;
-        $randomNumber = rand($min, $max);
+        $question = rand($min, $max);
 
-        $result = isPrime($randomNumber);
-
-        $question = $randomNumber;
-        $correctAnswer = $result ? 'yes' : 'no';
+        $correctAnswer = isPrime($question) ? 'yes' : 'no';
    
         return [$question, $correctAnswer];
     };
