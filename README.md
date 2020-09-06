@@ -27,7 +27,6 @@ brain-calc <br>
 <a href="https://asciinema.org/a/357663"><img src="https://asciinema.org/a/357663.png" width="320"/></a>
 <br>
 brain-gcd <br>
-Find the greatest common divisor of given numbers.<br>
 <a href="https://asciinema.org/a/357664"><img src="https://asciinema.org/a/357664.png" width="320"/></a>
 <a href="https://asciinema.org/a/357665"><img src="https://asciinema.org/a/357665.png" width="320"/></a>
 <br>
@@ -36,7 +35,6 @@ brain-progression <br>
 <a href="https://asciinema.org/a/357670"><img src="https://asciinema.org/a/357670.png" width="320"/></a>
 <br>
 brain-prime<br>
-Answer 'yes' if given number is prime, otherwise answer 'no'.
 <a href="https://asciinema.org/a/357667"><img src="https://asciinema.org/a/357667.png" width="320"/></a>
 <a href="https://asciinema.org/a/357668"><img src="https://asciinema.org/a/357668.png" width="320"/></a>
 <br>
