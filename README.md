@@ -6,7 +6,7 @@ Status of last Deployment:<br>
 <a href="https://github.com/molych/php-project-lvl1/actions"><img src="https://github.com/molych/php-project-lvl1/workflows/PHP-CI/badge.svg"></a><br>
 
 <h3>Install with composer</h3>
-composer global require<br>
+<p><i>composer global require</i></p>
 
 <p>The project contains 5 games</p>
 
@@ -18,7 +18,7 @@ composer global require<br>
     <li>brain-prime - Answer 'yes' if given number is prime, otherwise answer 'no'</li>
 </ul>
 
-<p>You can run a set of games in the command line (<b>brain-games<.b>) or each game separately</p>
+<p>You can run a set of games in the command line (<b>brain-games</b>) or each game separately</p>
 brain-even <br>
 <a href="https://asciinema.org/a/357656"><img src="https://asciinema.org/a/357656.png" width="320"/></a>
 <a href="https://asciinema.org/a/357657"><img src="https://asciinema.org/a/357657.png" width="320"/></a><br>
