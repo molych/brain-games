@@ -27,7 +27,7 @@ function run()
         $firstOperand = rand($min, $max);
         $secondOperand = rand($min, $max);
 
-        $correctAnswer = findGcd($firstOperand, $secondOperand);
+        $correctAnswer = (string) findGcd($firstOperand, $secondOperand);
         $question = "$firstOperand, $secondOperand";
 
         return [$question, $correctAnswer];

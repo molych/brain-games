@@ -8,7 +8,7 @@ const DESCRIPTION = "Answer 'yes' if given number is prime. Otherwise answer 'no
 
 function isPrime($num)
 {
-    if ($num == 1) {
+    if ($num < 2) {
         return false;
     }
 
@@ -24,7 +24,7 @@ function run()
 {
     $getData = function () {
         $min = 1;
-        $max = 100;
+        $max = 99;
         $question = rand($min, $max);
 
         $correctAnswer = isPrime($question) ? 'yes' : 'no';

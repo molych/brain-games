@@ -36,7 +36,7 @@ function run()
         $index = array_rand($mathematicalSigns, 1);
         $operation =  $mathematicalSigns[$index];
         $question = "$firstOperand $operation $seconOperand";
-        $correctAnswer = calculate($operation, $firstOperand, $seconOperand);
+        $correctAnswer = (string) calculate($operation, $firstOperand, $seconOperand);
         
         return [$question, $correctAnswer];
     };
