@@ -9,7 +9,7 @@ const DESCRIPTION = "What number is missing in the progression?";
 function makeProgression($length, $startCount, $stepCount)
 {
     $numbers = [];
-    for ($j = 0; $j <= $length; $j++) {
+    for ($j = 0; $j < $length; $j++) {
         if ($j === 0) {
             $numbers[] = $startCount;
             continue;
@@ -29,13 +29,13 @@ function run()
         $min = 0;
         $max = 9;
         $length = $max;
-        $secretKey = rand($min, $max);
-        $startCount = rand(1, 100);
-        $stepCount = rand(1, 10);
+        $secretMemberIndex = rand($min, $max);
+        $firstMember = rand(1, 100);
+        $step = rand(1, 10);
  
-        $numbers = makeProgression($length, $startCount, $stepCount);
-        $correctAnswer = (string) $numbers[$secretKey];
-        $numbers[$secretKey] = "..";
+        $numbers = makeProgression($length, $firstMember, $step);
+        $correctAnswer = (string) $numbers[$secretMemberIndex];
+        $numbers[$secretMemberIndex] = "..";
         $question = implode(' ', $numbers);
 
         return [$question, $correctAnswer];
