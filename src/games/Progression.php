@@ -9,7 +9,7 @@ const DESCRIPTION = "What number is missing in the progression?";
 function makeProgression($length, $startCount, $stepCount)
 {
     $numbers = [];
-    for ($j = 0; $j < $length; $j++) {
+    for ($j = 0; $j <= $length; $j++) {
         if ($j === 0) {
             $numbers[] = $startCount;
             continue;
