@@ -1,4 +1,4 @@
-# php-project-lvl1
+# brain-games
 
 <a href="https://codeclimate.com/github/molych/php-project-lvl1"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a><br>
 
