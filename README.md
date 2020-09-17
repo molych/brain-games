@@ -1,6 +1,6 @@
 # brain-games
 
-<a href="https://codeclimate.com/github/molych/php-project-lvl1"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a><br>
+<a href="https://codeclimate.com/github/molych/php-project-lvl1"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 <a href="https://github.com/molych/php-project-lvl1/actions"><img src="https://github.com/molych/php-project-lvl1/workflows/PHP-CI/badge.svg"></a><br>
 
 <h3>Install with composer</h3>
