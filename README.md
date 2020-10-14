@@ -4,8 +4,10 @@
 <a href="https://github.com/molych/brain-games/actions"><img src="https://github.com/molych/brain-games/workflows/PHP-CI/badge.svg"></a><br>
 
 <h3>Install with composer</h3>
-<p><i>composer global require</i></p>
 
+```
+composer global require sasha/brain-games
+```
 <p>The project contains 5 games</p>
 
 <ul>
