@@ -30,5 +30,5 @@ function startGame($description, $getData)
         }
     }
 
-    line("Congratulations, $name");
+    line("Congratulations,  $name");
 }
